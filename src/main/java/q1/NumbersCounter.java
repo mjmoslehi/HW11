@@ -1,6 +1,7 @@
 package q1;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class NumbersCounter {
 
@@ -50,6 +51,23 @@ public class NumbersCounter {
             System.out.println(odd);
 
 
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public synchronized void salam() {
+
+        try {
+
+            sum.addAll(even);
+            sum.addAll(odd);
+
+            Collections.sort(sum);
+
+            System.out.println("sum :");
+            System.out.println(sum);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
