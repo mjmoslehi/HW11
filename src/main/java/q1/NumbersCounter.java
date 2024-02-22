@@ -34,4 +34,26 @@ public class NumbersCounter {
             System.out.println(e.getMessage());
         }
     }
+
+    public synchronized void countOdd() {
+
+        try {
+
+
+            for (int i = 0; i <= number; i++) {
+                if (i % 2 != 0) {
+                    odd.add(i);
+                }
+            }
+
+            System.out.println("odd numbers :");
+            System.out.println(odd);
+
+
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
 }
