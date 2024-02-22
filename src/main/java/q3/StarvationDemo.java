@@ -1,4 +1,4 @@
 package q3;
 
-public class StarvationDemo {
+public class StarvationDemo extends Thread{
 }
